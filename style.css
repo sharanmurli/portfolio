@@ -195,23 +195,23 @@ height: auto;
 }
 
 .resume-but {
-  background-color: #E4C59E; /* Green background */
-  border: none; /* Remove borders */
-  color: black; /* White text */
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Centered text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Make the buttons appear side by side */
-  font-size: 16px; /* Increase font size */
-  margin: 4px 2px; /* Some margin */
-  transition-duration: 0.4s; /* 0.4 second transition effect to hover state */
-  cursor: pointer; /* Pointer/hand icon */
-  border-radius: 8px; /* Rounded corners */
+  background-color: #E4C59E; 
+  border: none; 
+  color: black; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px;
+  transition-duration: 0.4s; 
+  cursor: pointer; 
+  border-radius: 8px; 
 }
 
 .resume-but:hover {
-  background-color: white; /* White background on hover */
-  color: black; /* Black text on hover */
+  background-color: white; 
+  color: black; 
   text-decoration: none;
 
 }
@@ -220,24 +220,24 @@ height: auto;
     padding-bottom: 50px;
   }
   .main button {
-    background-color: #E4C59E; /* Green background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Make the buttons appear side by side */
-    font-size: 16px; /* Increase font size */
-    margin: 4px 2px; /* Some margin */
-    transition-duration: 0.4s; /* 0.4 second transition effect to hover state */
-    cursor: pointer; /* Pointer/hand icon */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #E4C59E; 
+    border: none;
+    color: white;
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+    border-radius: 8px; 
 }
 
 .main button:hover {
-    background-color: white; /* White background on hover */
-    color: black; /* Black text on hover */
-    border: 2px solid #E4C59E; /* Green border */
+    background-color: white; 
+    color: black; 
+    border: 2px solid #E4C59E; 
 }
   .education-sec{
     padding-top: 100px;
@@ -390,7 +390,7 @@ height: auto;
   .timeline > li.timeline-inverted > .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
-    left: -14px;
+    left: -15px;
     right: auto;
   }
   
@@ -422,14 +422,14 @@ height: auto;
   }
   .timeline-body ul {
     list-style-type: disc;
-    margin-left: 10px; /* Reduced left margin */
-    padding-left: 10px; /* Adjusted padding to match */
+    margin-left: 10px; 
+    padding-left: 10px; 
   }
   
   .timeline-body ul ul {
     list-style-type: circle;
-    margin-left: 10px; /* Reduced left margin for nested list */
-    padding-left: 10px; /* Adjusted padding to match */
+    margin-left: 10px; 
+    padding-left: 10px; 
   }
   
   
@@ -773,7 +773,7 @@ border-radius: 10px;
 
 .contact-but button {
   background-color: #E4C59E;
-  border: 2px solid transparent; /* Include border in default state */
+  border: 2px solid transparent; 
   color: black;
   padding: 15px 32px;
   text-align: center;
@@ -789,7 +789,7 @@ border-radius: 10px;
 .contact-but button:hover {
   background-color: white;
   color: black;
-  border: 2px solid transparent;  /* Change border color on hover */
+  border: 2px solid transparent;  
 }
 
   /*social media icons*/
@@ -973,8 +973,8 @@ border-radius: 10px;
   right: 20px;
   z-index: 99;
   display: none;
-  background-color: #E4C59E; /* Background color */
-  color: white; /* Text color */
+  background-color: #E4C59E; 
+  color: white; 
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -986,12 +986,12 @@ border-radius: 10px;
 }
 
 .go-to-top:hover {
-  background-color: #d3a26e; /* Hover background color */
+  background-color: #d3a26e; 
   transform: scale(1.1);
 }
 
 .go-to-top i {
-  color: #000; /* Icon color */
+  color: #000; 
 }
 
 /* Responsive adjustments */
@@ -1008,8 +1008,8 @@ border-radius: 10px;
 .vertical-contact {
 
 
-  background-color: #000; /* Background color */
-  color: #fff; /* Text color */
+  background-color: #000; 
+  color: #fff; 
   margin: 0 auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -1036,7 +1036,7 @@ border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff; /* Text color */
+  color: #fff; 
   text-decoration: none;
   font-family: 'Ubuntu Mono', monospace;
   padding: 10px;
@@ -1044,7 +1044,7 @@ border-radius: 10px;
 }
 
 .contact-item a:hover {
-  color: #E4C59E; /* Hover color */
+  color: #E4C59E; 
 }
 
 .contact-item i {
