@@ -9,6 +9,8 @@ html {
   /*Navbar*/
   .navbar {
     background-color: #000;
+  
+      margin: 0 !important;
   }
 
   .navbar .navbar-nav .nav-item a {
@@ -32,9 +34,20 @@ html {
       color: #fff;
     }
 
-    .navbar-toggler-icon{
-      color: white;
-    }
+   
+
+ 
+.navbar-toggler i {
+  color: white; 
+  font-size: 24px; 
+  transition: color 0.3s ease;
+}
+
+
+.navbar-toggler i.fa-times {
+  color: white; 
+}
+
 
   .bg-navbar{
     background-color: #000;
@@ -1005,48 +1018,81 @@ border-radius: 10px;
     font-size: 20px;
   }
 }
+/* Centering the vertical contact section */
 .vertical-contact {
-
-
   background-color: #000; 
   color: #fff; 
-  margin: 0 auto;
+  width: fit-content; /* Adjusts dynamically */
+  max-width: 90%; /* Prevents overflow on small screens */
+  margin: 20px auto; /* Centers it */
+  padding: 20px;
+  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-
- 
+  text-align: center;
 }
+
+/* Flexbox for side-by-side layout */
 .contact-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center; /* Centers the items */
+  gap: 15px; /* Adds spacing between items */
 }
 
+/* Contact item styling */
 .contact-item {
-  margin: 10px 5px;
+  margin: 10px;
 }
 
-.contact-item i {
- margin-right: 5px;
-}
-
+/* Styling for icons and links */
 .contact-item a {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px; /* Spacing between icon and text */
   color: #fff; 
   text-decoration: none;
   font-family: 'Ubuntu Mono', monospace;
   padding: 10px;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.2s;
 }
 
-.contact-item a:hover {
-  color: #E4C59E; 
-}
-
+/* Icon size */
 .contact-item i {
   font-size: 24px;
+}
+
+/* Hover effect */
+.contact-item a:hover {
+  color: #E4C59E; 
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .contact-list {
+    flex-direction: column; /* Stacks items vertically on smaller screens */
+  }
+
+  .contact-item {
+    width: 100%; /* Ensures full width on mobile */
+    text-align: center;
+  }
+
+  .contact-item a {
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-item a {
+    font-size: 14px;
+  }
+
+  .contact-item i {
+    font-size: 20px;
+  }
 }

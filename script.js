@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.getElementById("navToggle");
+  const menuIcon = document.getElementById("menuIcon");
+
+  navToggle.addEventListener("click", function () {
+    if (menuIcon.classList.contains("fa-bars")) {
+      menuIcon.classList.remove("fa-bars");
+      menuIcon.classList.add("fa-times");
+    } else {
+      menuIcon.classList.remove("fa-times");
+      menuIcon.classList.add("fa-bars");
+    }
+  });
+});
+
 /**Preloader */
 $(window).on('load', function() {
 
