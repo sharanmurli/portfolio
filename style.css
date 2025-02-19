@@ -72,18 +72,220 @@ html {
 
   /*Home Section*/
   .home-sec{
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 100px;
     background-color: #E4C59E;
   }
 
- /*about*/
- .about-sec{
-  padding-top: 50px;
+  .home-content p{
+    font-family: 'Ubuntu Mono', monospace;
 
+  }
+
+  .typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .typing-container p {
+    font-size: 2.4rem;
+    font-family: var(--comfortaa);
+    word-wrap: break-word;
+    max-width: 90%;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .typing-container p {
+        font-size: 1.8rem; /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .typing-container p {
+        font-size: 1.4rem; /* Smaller font size for mobile */
+    }
+}
+
+/* Keep typed text style */
+.typed-text {
+    color: #000;
+    font-family: var(--redressed);
+}
+
+/* Cursor styles */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    margin-left: 4px;
+    background: black;
+}
+
+.cursor.blink {
+    animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        background: black;
+    }
+    40%, 50% {
+        background: transparent;
+    }
+}
+
+/* Wave animation */
+.wave {
+    display: inline-block;
+    animation: wave-animation 2s infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+  
+/* Responsive font size */
+@media (max-width: 768px) {
+  .home-content p {
+      font-size: 1rem; /* Smaller text for tablets */
+  }
+
+  .home-content h1{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content p {
+      font-size: 0.8rem; /* Even smaller text for mobile */
+  }
+
+  .home-content h1{
+    font-size: 1.2rem;
+  }
+}
+
+ /*Vertical Contact Section*/
+.vertical-contact {
+  background-color: #000; 
+  color: #fff; 
+  width: fit-content; 
+  max-width: 90%; 
+  margin: 20px auto; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 15px; 
+}
+
+.contact-item {
+  margin: 10px;
+}
+
+.contact-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  color: #fff; 
+  text-decoration: none;
+  font-family: 'Ubuntu Mono', monospace;
+  padding: 10px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+
+.contact-item i {
+  font-size: 24px;
+}
+
+.contact-item a:hover {
+  color: #E4C59E; 
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contact-list {
+    flex-direction: column; 
+  }
+
+  .contact-item {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .contact-item a {
+    font-size: 16px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-item a {
+    font-size: 14px;
+  }
+
+  .contact-item i {
+    font-size: 20px;
+  }
+}
+
+
+
+ /*about*/
+ .about-sec {
+  padding: 100px 0;
   background-color: #000;
 }
 
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Ensures proper wrapping on small screens */
+}
+
+/* About Image Box */
+.about-img-box {
+  flex: 1;
+  text-align: center;
+}
+
+.about-img-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* About Info Section */
+.about-info {
+  flex: 1;
+  color: #fff;
+  padding: 20px;
+}
 
 .about-data h2 {
   font-family: 'Ubuntu Mono', monospace;
@@ -96,137 +298,96 @@ html {
   text-align: justify;
 }
 
-.about-hr{
-  border:none;
-  height: 20px;
-   width: 100%;
-  height: 50px;
-  margin-top: 0;
-  border-bottom: 2px solid #eeebe8;
-  box-shadow: 0 10px 10px -10px #eae7e7;
-  margin: -50px auto 10px
-}
-
-.about-text{
+.about-text {
   color: #fff;
- 
   font-family: 'Ubuntu Mono', monospace;
   text-transform: uppercase;
-
-}
-.about-info{
-
-  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.about-img-box img{
 
-height: auto;
 
-  border-radius: 20px;
-}
-
-.typing-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*Typing effect*/
-
-/* .typing-demo {
-  display: inline-block; 
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
- 
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 40ch;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-} */
-.typing-container p {
-  font-size: 2.4rem;
- 
-  font-family: var(--comfortaa);
-}
-
-.typed-text {
-  color: #000;
-  font-family: var(--redressed);
-}
-
-.cursor {
-  display: inline-block;
-  width: 3px;
-  margin-left: 4px;
-  background: var(--teal);
-}
-
-.cursor.blink {
-  animation: blink 0.8s ease-in-out infinite;
-}
-
-@keyframes blink {
-  0%, 100% {
-    background: var(--teal);
-  }
-  40%, 50% {
-    background: transparent;
-  }
-}
-
-.wave {
-  display: inline-block;
-  animation: wave-animation 2s infinite;
-  transform-origin: 70% 70%;
-}
-
-@keyframes wave-animation {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(14deg); }
-  20% { transform: rotate(-8deg); }
-  30% { transform: rotate(14deg); }
-  40% { transform: rotate(-4deg); }
-  50% { transform: rotate(10deg); }
-  60% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
-}
-
+/* Resume Button */
 .resume-but {
-  background-color: #E4C59E; 
-  border: none; 
-  color: black; 
-  padding: 15px 32px; 
-  text-align: center; 
-  text-decoration: none; 
-  display: inline-block; 
-  font-size: 16px; 
+  background-color: #E4C59E;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   margin: 4px 2px;
-  transition-duration: 0.4s; 
-  cursor: pointer; 
-  border-radius: 8px; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .resume-but:hover {
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   text-decoration: none;
+}
 
+/* Responsive Design */
+@media (max-width: 992px) {
+ 
+
+  .about-data p {
+    font-size: 0.8rem;
+}
+
+
+  .about-info {
+      padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-img-box img {
+      max-width: 90%;
+  }
+
+  .about-info {
+      padding: 15px;
+  }
+
+  .about-data h2 {
+      font-size: 1.5rem;
+  }
+
+  .about-data p {
+      font-size: 0.8rem;
+  }
+
+  .resume-but {
+      font-size: 14px;
+      padding: 12px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img-box img {
+      max-width: 100%;
+  }
+
+  .about-info {
+      padding: 10px;
+  }
+
+  .about-data h2 {
+      font-size: 1.3rem;
+  }
+
+  .about-data p {
+      font-size: 0.9rem;
+  }
+
+  .resume-but {
+      font-size: 12px;
+      padding: 10px 24px;
+  }
 }
   /*Education Section*/
   .main{
@@ -757,7 +918,10 @@ border-radius: 10px;
   color: black;
   border: 2px solid #E4C59E;
 }
- /*Contact Section*/
+
+
+
+/*Contact Section*/
 .contact-sec{
   padding-top: 100px;
   padding-bottom: 50px;
@@ -875,6 +1039,21 @@ border-radius: 10px;
     margin: 5px 0;
   }
   
+
+  /* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
 
 /* Preloader styles */
 #preloader {
@@ -1015,84 +1194,6 @@ border-radius: 10px;
     width: 40px;
     height: 40px;
     line-height: 40px;
-    font-size: 20px;
-  }
-}
-/* Centering the vertical contact section */
-.vertical-contact {
-  background-color: #000; 
-  color: #fff; 
-  width: fit-content; /* Adjusts dynamically */
-  max-width: 90%; /* Prevents overflow on small screens */
-  margin: 20px auto; /* Centers it */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  text-align: center;
-}
-
-/* Flexbox for side-by-side layout */
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-  justify-content: center; /* Centers the items */
-  gap: 15px; /* Adds spacing between items */
-}
-
-/* Contact item styling */
-.contact-item {
-  margin: 10px;
-}
-
-/* Styling for icons and links */
-.contact-item a {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Spacing between icon and text */
-  color: #fff; 
-  text-decoration: none;
-  font-family: 'Ubuntu Mono', monospace;
-  padding: 10px;
-  transition: color 0.3s, transform 0.2s;
-}
-
-/* Icon size */
-.contact-item i {
-  font-size: 24px;
-}
-
-/* Hover effect */
-.contact-item a:hover {
-  color: #E4C59E; 
-  transform: scale(1.05);
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .contact-list {
-    flex-direction: column; /* Stacks items vertically on smaller screens */
-  }
-
-  .contact-item {
-    width: 100%; /* Ensures full width on mobile */
-    text-align: center;
-  }
-
-  .contact-item a {
-    font-size: 16px; /* Adjust font size for better readability */
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-item a {
-    font-size: 14px;
-  }
-
-  .contact-item i {
     font-size: 20px;
   }
 }

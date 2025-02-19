@@ -40,7 +40,7 @@ window.onscroll = function() {
 const typedText = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-const textArray = ["Software Engineer", "Full-Stack Developer", "Quick Learner..."];
+const textArray = ["Software Engineer", "Full-Stack Developer", "Quick Learner", "AWS Certified Cloud Practioner.."];
 
 let textArrayIndex = 0;
 let charIndex = 0;
