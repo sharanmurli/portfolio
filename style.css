@@ -254,12 +254,15 @@ html {
 
 
 
- /*about*/
- .about-sec {
+ /* About Section */
+/* About Section */
+/* About Section */
+.about-sec {
   padding: 100px 0;
   background-color: #000;
 }
 
+/* Flex container for About */
 .about-content {
   display: flex;
   align-items: center;
@@ -270,7 +273,6 @@ html {
 
 /* About Image Box */
 .about-img-box {
-  flex: 1;
   text-align: center;
 }
 
@@ -282,22 +284,24 @@ html {
 
 /* About Info Section */
 .about-info {
-  flex: 1;
   color: #fff;
   padding: 20px;
 }
 
+/* About Headings */
 .about-data h2 {
   font-family: 'Ubuntu Mono', monospace;
   text-transform: uppercase;
   color: #E4C59E;
 }
 
+/* About Paragraph */
 .about-data p {
   font-family: 'Ubuntu Mono', monospace;
   text-align: justify;
 }
 
+/* About Title */
 .about-text {
   color: #fff;
   font-family: 'Ubuntu Mono', monospace;
@@ -305,8 +309,6 @@ html {
   text-align: center;
   margin-bottom: 20px;
 }
-
-
 
 /* Resume Button */
 .resume-but {
@@ -330,65 +332,80 @@ html {
   text-decoration: none;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
- 
+/* ✅ Fix for Stacking at 1100px (Centering Image and Text) */
+@media (max-width: 1100px) {
+  .about-row {
+    display: flex !important; /* Ensures proper flex layout */
+    flex-direction: column; /* Force stack */
+    align-items: center; /* Center content */
+    text-align: center; /* Center text */
+  }
 
-  .about-data p {
-    font-size: 0.8rem;
-}
+  .about-img-container, .about-info-container {
+    width: 100% !important; /* Forces full width */
+    display: flex;
+    justify-content: center; /* Centers content */
+  }
 
+  .about-img-box img {
+    max-width: 60%; /* Keep image size reasonable */
+  }
 
   .about-info {
-      padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
   }
 }
 
+/* Further responsiveness */
 @media (max-width: 768px) {
   .about-img-box img {
-      max-width: 90%;
+    max-width: 80%;
   }
 
   .about-info {
-      padding: 15px;
+    padding: 15px;
   }
 
   .about-data h2 {
-      font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .about-data p {
-      font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .resume-but {
-      font-size: 14px;
-      padding: 12px 28px;
+    font-size: 14px;
+    padding: 12px 28px;
   }
 }
 
 @media (max-width: 480px) {
   .about-img-box img {
-      max-width: 100%;
+    max-width: 90%;
   }
 
   .about-info {
-      padding: 10px;
+    padding: 10px;
   }
 
   .about-data h2 {
-      font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .about-data p {
-      font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .resume-but {
-      font-size: 12px;
-      padding: 10px 24px;
+    font-size: 12px;
+    padding: 10px 24px;
   }
 }
+
+
   /*Education Section*/
   .main{
     padding-bottom: 50px;
