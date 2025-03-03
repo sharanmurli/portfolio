@@ -405,6 +405,71 @@ html {
   }
 }
 
+ /*Certification Section*/
+
+ .certification-sec {
+  padding: 100px 0;
+  background-color: #000;
+}
+
+
+
+.certification-text {
+  color: #fff;
+  font-family: 'Ubuntu Mono', monospace;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.cert-card {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+ 
+  text-align: center;
+}
+
+.cert-card h4{
+  color: #fff;
+  font-family: 'Ubuntu Mono', monospace;
+  text-transform: uppercase;
+}
+
+.cert-image {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.cert-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  font-family: 'Ubuntu Mono', monospace;
+  
+}
+
+.cert-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none !important; /* Removes underline */
+  transition: color 0.3s ease-in-out;
+}
+
+.cert-link i {
+  font-size: 16px;
+}
+
+.cert-link:hover {
+  color: #0056b3;
+}
 
   /*Education Section*/
   .main{
