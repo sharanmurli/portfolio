@@ -1237,7 +1237,6 @@ border-radius: 10px;
   32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
 }
 
-/* Ensure the rest of the content is hidden until the preloader is done */
 .content {
   display: none;
 }
